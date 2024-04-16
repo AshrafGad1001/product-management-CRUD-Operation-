@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="crud">
+      <div class="head">
+        <h2>CRUD Operation</h2>
+        <p>Product Management Subsystem</p>
+      </div>
+
+      <div class="inputs">
+        <div class="product-name">
+          <label for="title">Product Name :</label>
+          <input placeholder="Product Name" type="text" id="title" />
+        </div>
+
+        <div class="price">
+          <label for="price">Price:</label>
+          <input
+            onkeyup="getTotal()"
+            placeholder="Price"
+            type="number"
+            id="price"
+          />
+          <label for="taxes">Taxes:</label>
+          <input
+            onkeyup="getTotal()"
+            placeholder="Taxes"
+            type="number"
+            id="taxes"
+          />
+          <label for="ads">Ads:</label>
+          <input
+            onkeyup="getTotal()"
+            placeholder="Ads"
+            type="number"
+            id="ads"
+          />
+          <label for="discount">Discount:</label>
+          <input
+            onkeyup="getTotal()"
+            placeholder="Discount"
+            type="number"
+            id="discount"
+          />
+        </div>
+        <!-- Empty div For Tital -->
+        <div id="total"></div>
+
+        <div class="countandcategory">
+          <div class="category">
+            <label for="category">Category:</label>
+            <input placeholder="Category" type="text" id="category" />
+          </div>
+          <div class="count">
+            <label for="count">Count:</label>
+            <input placeholder="Count" type="number" id="count" />
+          </div>
+          <button type="submit" id="submit">Add Product</button>
+        </div>
+      </div>
+
+      <div class="output">
+        <div class="searchBlock">
+          <input
+            onkeyup="searchData(this.value);"
+            type="text"
+            id="search"
+            placeholder="Search"
+          />
+          <div class="btnSearch">
+            <button
+              onclick="getSearchMood(this.id);"
+              class="searchTitle"
+              id="searchTitle"
+            >
+              Search by productName
+            </button>
+            <button
+              onclick="getSearchMood(this.id);"
+              class="searchCategory"
+              id="searchCategory"
+            >
+              Search by product Category
+            </button>
+          </div>
+        </div>
+        <div id="deleteAll"></div>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Title</th>
+              <th>price</th>
+              <th>Taxes</th>
+              <th>Ads</th>
+              <th>Discount</th>
+              <th>Total</th>
+              <th>category</th>
+              <th>update</th>
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- <tr>
+              <th>1</th>
+              <th>Oppo</th>
+              <th>5000</th>
+              <th>40</th>
+              <th>44</th>
+              <th>66</th>
+              <th>5500</th>
+              <th>Phones</th>
+              <th><button class="update">update</button></th>
+              <th><button class="delete">Delete</button></th>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

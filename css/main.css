@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.head {
+  color: azure;
+  width: 100%;
+  margin: 10px 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputs label {
+  color: white;
+  padding: 0 5px;
+}
+#title {
+  color: #222 important;
+}
+.inputs input {
+  border: none;
+  padding-left: 5px;
+  height: 25px;
+  color: white;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.inputs input:focus {
+  background-color: #ddd;
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+.product-name,
+.price,
+#total {
+  margin-top: 20px;
+  display: flex;
+}
+.price input {
+  color: #222;
+}
+.countandcategory {
+  display: flex;
+  justify-content: space-between;
+}
+.countandcategory input {
+  color: #222;
+}
+.product-name {
+  width: 100%;
+  display: flex;
+}
+.product-name input {
+  width: 84%;
+}
+.product-name label {
+  width: 16%;
+}
+#submit {
+  color: white;
+  width: 120px;
+  padding: 7px 10px;
+  background-color: rgb(121, 182, 57);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: All 0.5s;
+  -webkit-transition: All 0.5s;
+  -moz-transition: All 0.5s;
+  -ms-transition: All 0.5s;
+  -o-transition: All 0.5s;
+}
+#submit:hover {
+  transform: scale(1.07);
+  background-color: rgb(121, 182, 57);
+  letter-spacing: 2px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+#total {
+  background-color: #f4f4f4;
+  margin: 20px 0;
+  font-weight: 500;
+  font-style: oblique;
+  min-height: 30px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.searchBlock {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.output {
+  width: 100%;
+  display: flex0;
+}
+.btnSearch {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#search {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: All 0.5s;
+  -webkit-transition: All 0.5s;
+  -moz-transition: All 0.5s;
+  -ms-transition: All 0.5s;
+  -o-transition: All 0.5s;
+}
+#search:hover {
+  background-color: #ddd;
+  transform: scale(1.07);
+}
+.btnSearch button {
+  padding: 7px 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: All 0.5s;
+  -webkit-transition: All 0.5s;
+  -moz-transition: All 0.5s;
+  -ms-transition: All 0.5s;
+  -o-transition: All 0.5s;
+}
+.btnSearch button:hover {
+  transform: scale(1.07);
+}
+
+.update,
+.delete {
+  padding: 7px 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: All 0.5s;
+  -webkit-transition: All 0.5s;
+  -moz-transition: All 0.5s;
+  -ms-transition: All 0.5s;
+  -o-transition: All 0.5s;
+}
+.update:hover,
+.delete:hover {
+  transform: scale(1.07);
+  letter-spacing: 2px;
+}
+table thead {
+  color: rgb(121, 182, 57);
+  text-transform: uppercase;
+}
+table {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+table tr {
+  padding: 15px 0;
+  margin: 10px 0;
+}
+#deleteAll button {
+  width: 100%;
+  background-color: #ddd;
+  margin: 15px 0;
+  padding: 7px 10px;
+  background-color: rgb(121, 182, 57);
+  border-radius: 10px;
+  font-weight: 600;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  transition: All 0.5s;
+  -webkit-transition: All 0.5s;
+  -moz-transition: All 0.5s;
+  -ms-transition: All 0.5s;
+  -o-transition: All 0.5s;
+}
+
+#deleteAll button:hover {
+  transform: scale(1.07);
+  letter-spacing: 2px;
+}
